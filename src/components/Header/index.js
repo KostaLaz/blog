@@ -2,9 +2,13 @@ import React from 'react'
 
 export const Header = () => {
     return (
-        <div>
-            
-        </div>
+       <header>
+           <nav>
+               <a href="#">Home</a>
+               <a href="#">About</a>
+               <a href="#">Contact us</a>
+           </nav>
+       </header>
     )
 }
 
