@@ -1,9 +1,10 @@
 import React from 'react'
+import './style.css'
 
-const Logo = () => {
+const Logo = (props) => {
     return (
-        <div>
-            LOGO
+        <div className="logo">
+            <a href="#">LOGO</a>
         </div>
     )
 }
