@@ -11,6 +11,10 @@ const Navbar = (props) => {
                 <li><a href="#"> Contact Us</a></li>
                 <li><a href="#"> Home</a></li>
             </ul>
+            <div>
+                <input />
+                <img src={require('../../assets/icons/search.png')} alt="Search" />
+            </div>
             
         </div>
     )
