@@ -4,7 +4,7 @@ import './style.css'
 const Logo = (props) => {
     return (
         <div className="logo">
-            <a href="#">LOGO</a>
+            <a href="#">Kosta Lazarevski</a>
         </div>
     )
 }

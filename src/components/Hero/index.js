@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../Logo';
 import Card from '../UI/Card';
 import './style.css';
 
@@ -7,7 +8,9 @@ export const Hero = (props) => {
     return (
         <div>
             <Card>
-                Kosta Lazarevski
+                <div style={{padding: '50px 0'}}>
+                <Logo />
+                </div>
             </Card>
         </div>
     )
