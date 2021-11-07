@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.css'
 import { FaSistrix } from 'react-icons/fa';  
 
 const Navbar = (props) => {
+
+    const [search, setSearch] = useState(false);
+    
+    const submitSearch = (e) => {
+        e.preventDefault();
+        alert('SEARCH');
+    }
+
+    const openSearch = () => {
+        setSearch(true);
+    }
+
+    const searchClass = search ? 'searchInput active' : 'searchInput';
+    
+
     return (
         <div className="navbar">
             <ul className="navbarMenu">
@@ -12,10 +27,12 @@ const Navbar = (props) => {
                 <li><a href="#"> Contact Us</a></li>
                 <li><a href="#"> Home</a></li>
             </ul>
-            <div className="search">
-                <input type="text" className="searchInput" placeholder="Search"/>
-                 <FaSistrix className="searchIcon" /> 
-            </div>
+            <form onSubmit={submitSearch}>
+                <div className="search">
+                    <input type="text" className={searchClass} placeholder="Search"/>
+                    <FaSistrix onClick={openSearch} className="searchIcon" /> 
+                </div>
+            </form>
         </div>
     )
 }
