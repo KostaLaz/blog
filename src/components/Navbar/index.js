@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css'
+import { FaSistrix } from 'react-icons/fa';  
 
 const Navbar = (props) => {
     return (
@@ -11,11 +12,10 @@ const Navbar = (props) => {
                 <li><a href="#"> Contact Us</a></li>
                 <li><a href="#"> Home</a></li>
             </ul>
-            <div>
-                <input type="text" placeholder="Search"/>
-                <img src={require('../../assets/icons/icons8-search-30.png')} alt="Search"/>
+            <div className="search">
+                <input type="text" className="searchInput" placeholder="Search"/>
+                 <FaSistrix className="searchIcon" /> 
             </div>
-            
         </div>
     )
 }
