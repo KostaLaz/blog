@@ -12,8 +12,9 @@ function App() {
     <Router>
 
     <div className="App">
-       <Header />
-       <Hero />
+      <Header />
+      <Hero />
+      <Post />
       <Route path="/" exact component={Home} />
       <Route path="/contact-us" exact component={ContactUs} />
       <Route path="/about-us" exact component={About} />
